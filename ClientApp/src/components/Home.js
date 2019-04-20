@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import SketchCanvas from './SketchCanvas';
-import {SketchField, Tools} from 'react-sketch';
 import "./interface.css";
 import TextForm from './text.js';
 
@@ -16,7 +15,7 @@ const sketchBoxStyle = {
 
 const Home = props => (
   <div style={sketchBoxStyle}>
-    {<SketchCanvas height={1000} />}
+    {<SketchCanvas height={1000} value={props.value} />}
   </div>
 );
 
